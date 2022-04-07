@@ -40,9 +40,9 @@ section h2{
     padding-top: 25%;
 }
 .flex-container{
-    display: block;
+    display: grid;
     gap: 25px 25px;
-    margin: auto;
+    padding-left: 15%;
 }
 
 /* BROOMmates*/
@@ -52,8 +52,7 @@ section h2{
 .broommatesImage{
     display: block;
     float: left;
-    height: auto;
-    max-width: 5%;
+    height: 200px;
 }
 .broommatesText{
     float: right;
@@ -66,8 +65,7 @@ section h2{
 .treasuryImage{
     display: block;
     float: left;
-    height:10px;
-    width: 15px;
+    height:200px;
 }
 .treasuryText{
     float: right;
@@ -79,9 +77,27 @@ section h2{
 }
 .outboulderImage{
     float: left;
-    height: 500px;
-    width: 50%;
+    height: 200px;
 }
 .outboulderText{
     float: right;
 }
+
+@media only screen and (max-width: 1000px) {
+    #navigation {
+      display: none;
+    }
+    .icons {
+      margin-left: auto;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+    }
+    #categoryGrid {
+      grid-template-rows: 300px 300px ;
+      grid-template-columns: 1fr;
+    }
